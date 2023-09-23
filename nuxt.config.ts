@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	devtools: { enabled: true },
+	modules: [ '@nuxt/ui'],
 	experimental: {
 		typedPages: true,
 		headNext: true,
@@ -10,11 +11,18 @@ export default defineNuxtConfig({
 	typescript: {
 		shim: false,
 	},
+	tailwindcss: {
+		configPath: '~/tailwind.config.ts',
+	},
 	app: {
 		head: {
 			htmlAttrs: {
 				lang: 'en',
 			},
 		},
+	},
+	colorMode: {
+		preference: 'dark',
+		fallback: 'dark',
 	},
 });
