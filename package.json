@@ -10,7 +10,15 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@iconify-json/heroicons": "latest",
     "@nuxt/devtools": "latest",
-    "nuxt": "^3.7.3"
+    "@types/node": "latest",
+    "@vite-pwa/nuxt": "latest",
+    "bun-types": "latest",
+    "nuxt": "latest"
+  },
+  "dependencies": {
+    "@nuxt/ui": "latest",
+    "sass": "latest"
   }
 }
