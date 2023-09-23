@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	devtools: { enabled: true },
-	modules: [ '@nuxt/ui'],
+	modules: ['@vite-pwa/nuxt', '@nuxt/ui'],
 	experimental: {
 		typedPages: true,
 		headNext: true,
