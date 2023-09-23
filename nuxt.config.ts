@@ -10,4 +10,11 @@ export default defineNuxtConfig({
 	typescript: {
 		shim: false,
 	},
+	app: {
+		head: {
+			htmlAttrs: {
+				lang: 'en',
+			},
+		},
+	},
 });
