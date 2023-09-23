@@ -32,5 +32,8 @@
 		"/": "${workspaceFolder}/pages"
 	},
 	"npm.autoDetect": "on",
-	"npm.packageManager": "bun"
+	"npm.packageManager": "bun",
+	"conventionalCommits.emojiFormat": "emoji",
+	"conventionalCommits.promptCI": true,
+	"conventionalCommits.promptScopes": false
 }
