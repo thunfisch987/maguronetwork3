@@ -7,4 +7,7 @@ export default defineNuxtConfig({
 		typescriptBundlerResolution: true,
 		writeEarlyHints: true,
 	},
+	typescript: {
+		shim: false,
+	},
 });
