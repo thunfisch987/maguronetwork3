@@ -1,0 +1,36 @@
+{
+	"json.schemaDownload.enable": true,
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/*.code-search": true,
+		"**/.nuxt": true,
+		"pnpm-lock.yaml": true
+	},
+	"editor.useTabStops": true,
+	"editor.tabSize": 4,
+	"editor.detectIndentation": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"tailwindCSS.includeLanguages": { "vue": "html", "vue-html": "html" },
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"tailwindCSS.experimental.configFile": "tailwind.config.ts",
+	"tailwindCSS.experimental.classRegex": [
+		["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"]
+	],
+	"tailwindCSS.classAttributes": ["class", "className", "ngClass", "ui"],
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": true
+	},
+	"terminal.integrated.fontFamily": "MesloLGS NF",
+	"editor.fontFamily": "Fira Code",
+	"path-intellisense.mappings": {
+		"/": "${workspaceFolder}/pages"
+	},
+	"npm.autoDetect": "on",
+	"npm.packageManager": "bun"
+}
