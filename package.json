@@ -11,11 +11,11 @@
   },
   "devDependencies": {
     "@iconify-json/heroicons": "^1.1.12",
-    "@nuxt/devtools": "^0.8.4",
-    "@types/node": "^20.6.3",
+		"@nuxt/devtools": "^0.8.5",
+		"@types/node": "^20.7.2",
     "@vite-pwa/nuxt": "^0.1.1",
     "bun-types": "^1.0.3",
-    "nuxt": "^3.7.3"
+		"nuxt": "^3.7.4"
   },
   "dependencies": {
     "@nuxt/ui": "^2.8.1",
