@@ -22,6 +22,7 @@ export default defineNuxtConfig({
 			htmlAttrs: {
 				lang: 'en',
 			},
+			meta: [{ name: 'theme-color', content: '#4e319f' }],
 		},
 	},
 	colorMode: {
