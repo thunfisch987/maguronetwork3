@@ -20,6 +20,7 @@
 		["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"]
 	],
 	"tailwindCSS.classAttributes": ["class", "className", "ngClass", "ui"],
+	"tailwindCSS.emmetCompletions": true,
 	"editor.quickSuggestions": {
 		"strings": "on"
 	},
