@@ -35,4 +35,14 @@ const myLinks: MyVerticalNavigationLink[] = [
 interface MyVerticalNavigationLink extends VerticalNavigationLink {
 	children?: VerticalNavigationLink[];
 }
+
+// const links2: MyVerticalNavigationLink[] = useRouter()
+// 	.getRoutes()
+// 	.filter((route) => route.name)
+// 	.map(function (route): MyVerticalNavigationLink {
+// 		return {
+// 			label: route.name!.toString(),
+// 			to: route.path,
+// 		};
+// 	});
 </script>
