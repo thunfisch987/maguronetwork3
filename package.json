@@ -10,16 +10,16 @@
 		"postinstall": "nuxt prepare"
 	},
 	"devDependencies": {
-		"@iconify-json/heroicons": "^1.1.12",
-		"@nuxt/devtools": "^0.8.5",
-		"@types/node": "^20.7.2",
-		"@vite-pwa/nuxt": "^0.1.1",
-		"bun-types": "^1.0.3",
-		"nuxt": "^3.7.4"
+		"@iconify-json/heroicons": "latest",
+		"@nuxt/devtools": "latest",
+		"@types/node": "latest",
+		"@vite-pwa/nuxt": "latest",
+		"bun-types": "latest",
+		"nuxt": "latest"
 	},
 	"dependencies": {
-		"@nuxt/ui": "^2.8.1",
-		"sass": "^1.68.0"
+		"@nuxt/ui": "latest",
+		"sass": "latest"
 	},
 	"trustedDependencies": [
 		"sharp"
