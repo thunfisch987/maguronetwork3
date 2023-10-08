@@ -2,9 +2,6 @@
 	<div>
 		<MaguroNav />
 		<slot />
-		<ClientOnly>
-			<UButton @click="$pwa.install">Install, i guess</UButton>
-		</ClientOnly>
 	</div>
 </template>
 

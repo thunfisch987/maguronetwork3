@@ -1,5 +1,5 @@
 <template>
-	<UVerticalNavigation :links="myLinks" />
+	<UVerticalNavigation :links="myLinks"> </UVerticalNavigation>
 </template>
 
 <script setup lang="ts">
