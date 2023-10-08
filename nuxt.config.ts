@@ -8,6 +8,14 @@ export default defineNuxtConfig({
 		typescriptBundlerResolution: true,
 		writeEarlyHints: true,
 	},
+	ui: {
+		icons: [
+			'heroicons',
+			'game-icons',
+			'simple-icons',
+			'fluent-emoji-high-contrast',
+		],
+	},
 	typescript: {
 		shim: false,
 	},
