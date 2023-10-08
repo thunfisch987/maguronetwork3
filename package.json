@@ -19,6 +19,8 @@
 	},
 	"dependencies": {
 		"@nuxt/ui": "latest",
+		"prettier": "latest",
+		"prettier-plugin-tailwindcss": "latest",
 		"sass": "latest"
 	},
 	"trustedDependencies": [
