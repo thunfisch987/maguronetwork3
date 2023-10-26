@@ -24,9 +24,6 @@
 	"editor.quickSuggestions": {
 		"strings": "on"
 	},
-	"editor.codeActionsOnSave": {
-		"source.organizeImports": true
-	},
 	"terminal.integrated.fontFamily": "MesloLGS NF",
 	"editor.fontFamily": "Fira Code",
 	"path-intellisense.mappings": {
@@ -38,5 +35,5 @@
 	"conventionalCommits.promptCI": true,
 	"conventionalCommits.promptScopes": false,
 	"prettier.enableDebugLogs": true,
-	"prettier.resolveGlobalModules": false,
+	"prettier.resolveGlobalModules": false
 }
