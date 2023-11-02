@@ -22,7 +22,8 @@
     "@iconify-json/simple-icons": "latest",
     "@nuxt/ui": "latest",
     "prettier": "latest",
-    "prettier-plugin-tailwindcss": "latest"
+    "prettier-plugin-tailwindcss": "latest",
+	"prettier-plugin-organize-imports": "latest"
   },
   "trustedDependencies": [
     "sharp"
