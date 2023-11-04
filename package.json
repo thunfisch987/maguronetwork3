@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/image": "latest",
     "@types/node": "latest",
     "@vite-pwa/nuxt": "latest",
     "bun-types": "latest",
@@ -23,7 +24,7 @@
     "@nuxt/ui": "latest",
     "prettier": "latest",
     "prettier-plugin-tailwindcss": "latest",
-	"prettier-plugin-organize-imports": "latest"
+    "prettier-plugin-organize-imports": "latest"
   },
   "trustedDependencies": [
     "sharp"
