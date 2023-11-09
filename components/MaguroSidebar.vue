@@ -13,22 +13,27 @@
 				body: { base: 'flex-1' },
 				ring: '',
 				background: 'bg-transparent dark:bg-transparent',
+				header: {
+					base: 'flex items-center justify-between',
+					padding: 'p-6 lg:px-8',
+				},
 			}"
 		>
 			<template #header>
-				<div class="flex items-center justify-between">
-					<a href="#" class="-m-1.5 p-1.5">
+				<div class="flex mr-auto">
+					<a href="/">
 						<span class="sr-only">MaguroNetwork</span>
 						<UIcon class="h-8 w-auto" name="i-logos-nuxt-icon" />
 					</a>
-					<UButton
-						color="gray"
-						variant="ghost"
-						icon="i-heroicons-x-mark-20-solid"
-						class="-my-1"
-						@click="mobileMenuOpen = false"
-					/>
 				</div>
+				<UButton
+					color="gray"
+					variant="ghost"
+					icon="i-heroicons-x-mark-20-solid"
+					size="xl"
+					class="ml-auto"
+					@click="mobileMenuOpen = false"
+				/>
 			</template>
 
 			<ULink
