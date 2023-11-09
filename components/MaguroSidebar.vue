@@ -17,6 +17,7 @@
 					base: 'flex items-center justify-between',
 					padding: 'p-6 lg:px-8',
 				},
+				divide: 'divide-y divide-gray-100 dark:divide-gray-800',
 			}"
 		>
 			<template #header>
@@ -40,7 +41,7 @@
 				v-for="item in navigation"
 				:key="item.name"
 				:to="item.href"
-				class="-mx-3 block rounded-lg px-3 py-2 text-center text-lg font-semibold leading-7 text-gray-100 hover:bg-gray-950"
+				class="-mx-3 block rounded-lg px-3 py-2 text-center text-lg font-semibold leading-7 text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-950"
 			>
 				{{ item.name }}
 				<UIcon
