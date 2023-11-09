@@ -28,14 +28,14 @@
 						<div class="w-8 h-8"></div>
 					</template>
 				</ClientOnly>
-					<UButton
-						color="gray"
-						icon="i-heroicons-bars-3"
-						variant="ghost"
-						size="xl"
-						class="ml-auto"
-						@click="mobileMenuOpen = true"
-					/>
+				<UButton
+					color="gray"
+					icon="i-heroicons-bars-3"
+					variant="ghost"
+					size="xl"
+					class="ml-auto"
+					@click="mobileMenuOpen = true"
+				/>
 			</nav>
 			<MaguroSidebar />
 		</header>
