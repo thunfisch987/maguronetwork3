@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<MaguroNav2 />
+		<MaguroNav />
 		<slot />
 	</div>
 </template>
