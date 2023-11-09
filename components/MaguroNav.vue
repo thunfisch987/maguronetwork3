@@ -33,7 +33,6 @@
 					icon="i-heroicons-bars-3"
 					variant="ghost"
 					size="xl"
-					class="ml-auto"
 					@click="mobileMenuOpen = true"
 				/>
 			</nav>
