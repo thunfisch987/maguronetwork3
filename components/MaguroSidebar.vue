@@ -38,18 +38,13 @@
 			</template>
 
 			<ULink
-				v-for="item in navigation"
+				v-for="item in navigationne"
 				:key="item.name"
-				:to="item.href"
+				:to="item.to"
 				class="-mx-3 block rounded-lg px-3 py-2 text-center text-lg font-semibold leading-7 text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-950"
 			>
 				{{ item.name }}
-				<UIcon
-					v-if="
-						item.name === 'Rocketgame' || item.name === 'Razer4Ever'
-					"
-					name="i-heroicons-arrow-up-right"
-				/>
+				<UIcon v-if="item.external" name="i-heroicons-arrow-up-right" />
 			</ULink>
 
 			<template #footer></template>
@@ -57,16 +52,6 @@
 	</USlideover>
 </template>
 <script setup lang="ts">
-const navigation = [
-	{ name: 'MaguroNetwork', href: '#' },
-	{ name: 'Akela', href: '#' },
-	{ name: 'EnergyDrinkWiki', href: '#' },
-	{ name: 'RandomMemes', href: '#' },
-	{ name: 'Vegalou', href: '#' },
-	{ name: 'Weebsite', href: '#' },
-	{ name: 'Razer4Ever', href: '#' },
-	{ name: 'Rocketgame', href: '#' },
-];
-
+const navigationne = useNavigationState();
 const mobileMenuOpen = useSidebarState();
 </script>
