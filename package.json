@@ -27,7 +27,8 @@
     "prettier-plugin-organize-imports": "latest"
   },
   "trustedDependencies": [
-    "sharp"
+    "sharp",
+    "esbuild"
   ],
   "overrides": {
     "@polka/url": "next"
