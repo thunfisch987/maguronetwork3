@@ -11,9 +11,7 @@ export default defineNuxtConfig({
 	ui: {
 		icons: [
 			'heroicons',
-			'game-icons',
-			'simple-icons',
-			'fluent-emoji-high-contrast',
+			'logos'
 		],
 	},
 	typescript: {

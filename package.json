@@ -17,10 +17,7 @@
     "nuxt": "latest"
   },
   "dependencies": {
-    "@iconify-json/fluent-emoji-high-contrast": "latest",
-    "@iconify-json/game-icons": "latest",
     "@iconify-json/logos": "^1.1.37",
-    "@iconify-json/simple-icons": "latest",
     "@nuxt/ui": "latest",
     "prettier": "latest",
     "prettier-plugin-tailwindcss": "latest",
