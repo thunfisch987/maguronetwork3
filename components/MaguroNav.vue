@@ -8,7 +8,7 @@
 				<div class="flex mr-auto">
 					<a href="#">
 						<span class="sr-only">MaguroNetwork</span>
-						<UIcon class="h-8 w-auto" name="i-logos-nuxt-icon" />
+						<UIcon class="h-8 w-auto" name="i-logos-nuxt-icon" dynamic />
 					</a>
 				</div>
 				<ClientOnly>
