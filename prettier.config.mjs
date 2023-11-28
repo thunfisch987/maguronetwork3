@@ -5,7 +5,7 @@ const config = {
 	semi: true,
 	singleQuote: true,
 	trailingComma: 'all',
-	singleAttributePerLine: false,
+	singleAttributePerLine: true,
 	plugins: ['prettier-plugin-tailwindcss', 'prettier-plugin-organize-imports'],
 	tailwindConfig: './tailwind.config.ts',
 };
