@@ -18,9 +18,10 @@
   "dependencies": {
     "@iconify-json/logos": "latest",
     "@nuxt/ui": "latest",
+    "nuxt-typed-router": "latest",
     "prettier": "latest",
-    "prettier-plugin-tailwindcss": "latest",
-    "prettier-plugin-organize-imports": "latest"
+    "prettier-plugin-organize-imports": "latest",
+    "prettier-plugin-tailwindcss": "latest"
   },
   "trustedDependencies": [
     "sharp",
