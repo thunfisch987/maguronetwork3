@@ -11,14 +11,16 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@types/node": "latest",
     "@types/bun": "latest",
+    "@types/node": "latest",
     "nuxt": "latest"
   },
   "dependencies": {
     "@iconify-json/logos": "latest",
     "@nuxt/ui": "latest",
+    "@pinia/nuxt": "latest",
     "nuxt-typed-router": "latest",
+    "pinia": "latest",
     "prettier": "latest",
     "prettier-plugin-organize-imports": "latest",
     "prettier-plugin-tailwindcss": "latest"
