@@ -1,17 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
-	devtools: { enabled: true },
-	modules: ['@nuxt/ui', 'nuxt-typed-router'],
+	devtools: {
+		enabled: true,
+	},
+	modules: ['@nuxt/ui', 'nuxt-typed-router', '@pinia/nuxt'],
 	experimental: {
 		headNext: true,
-		typescriptBundlerResolution: true,
 		writeEarlyHints: true,
 	},
+	future: {
+		typescriptBundlerResolution: true,
+	},
 	ui: {
-		icons: [
-			'heroicons',
-			'logos'
-		],
+		icons: ['heroicons', 'logos'],
 	},
 	typescript: {
 		shim: false,
