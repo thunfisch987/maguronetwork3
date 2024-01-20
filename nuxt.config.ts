@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 	devtools: {
 		enabled: true,
 	},
-	modules: ['@nuxt/ui', '@pinia/nuxt', '@nuxt/content'],
+	modules: ['@nuxt/ui', '@pinia/nuxt', '@nuxt/content', "@nuxthq/studio"],
 	content: {
 		markdown: {
 			remarkPlugins: ['remark-wiki-link']
