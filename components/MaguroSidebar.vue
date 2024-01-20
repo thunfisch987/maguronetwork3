@@ -1,6 +1,6 @@
 <template>
 	<USlideover
-		v-model="mobileMenuOpen"
+		v-model="appStore.sidebarState"
 		:overlay="false"
 		class="backdrop-blur-sm"
 		:ui="{
@@ -33,7 +33,7 @@
 					icon="i-heroicons-x-mark-20-solid"
 					size="xl"
 					class="ml-auto"
-					@click="mobileMenuOpen = false"
+					@click="appStore.toggleSidebar()"
 				/>
 			</template>
 
@@ -52,6 +52,5 @@
 	</USlideover>
 </template>
 <script setup lang="ts">
-const navigationne = useNavigationState();
-const mobileMenuOpen = useSidebarState();
+const appStore = useAppStore();
 </script>
