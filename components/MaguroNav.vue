@@ -18,7 +18,7 @@
 				<ClientOnly>
 					<UButton
 						:icon="
-							isDark
+							appStore.isDark
 								? 'i-heroicons-moon-20-solid'
 								: 'i-heroicons-sun-20-solid'
 						"
@@ -26,7 +26,7 @@
 						variant="ghost"
 						aria-label="Theme"
 						class="ml-auto mr-4"
-						@click="isDark = !isDark"
+						@click="appStore.toggleColorMode"
 					/>
 					<template #fallback>
 						<div class="w-8 h-8"></div>
@@ -37,7 +37,7 @@
 					icon="i-heroicons-bars-3"
 					variant="ghost"
 					size="xl"
-					@click="mobileMenuOpen = true"
+					@click="appStore.toggleSidebar()"
 				/>
 			</nav>
 			<MaguroSidebar />
@@ -46,14 +46,5 @@
 </template>
 
 <script setup lang="ts">
-const mobileMenuOpen = useSidebarState();
-const colorMode = useColorMode();
-const isDark = computed({
-	get() {
-		return colorMode.value === 'dark';
-	},
-	set() {
-		colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
-	},
-});
+const appStore = useAppStore();
 </script>
