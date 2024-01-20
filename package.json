@@ -16,6 +16,7 @@
     "nuxt": "latest"
   },
   "dependencies": {
+    "@biomejs/biome": "latest",
     "@iconify-json/logos": "latest",
     "@nuxt/ui": "latest",
     "@pinia/nuxt": "latest",
