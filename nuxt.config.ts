@@ -4,7 +4,12 @@ export default defineNuxtConfig({
 	devtools: {
 		enabled: true,
 	},
-	modules: ['@nuxt/ui', 'nuxt-typed-router', '@pinia/nuxt'],
+	modules: ['@nuxt/ui', '@pinia/nuxt', '@nuxt/content'],
+	content: {
+		markdown: {
+			remarkPlugins: ['remark-wiki-link']
+		}
+	},
 	experimental: {
 		headNext: true,
 		writeEarlyHints: true,
