@@ -18,13 +18,15 @@
   "dependencies": {
     "@biomejs/biome": "latest",
     "@iconify-json/logos": "latest",
+    "@nuxt/content": "^2.10.0",
     "@nuxt/ui": "latest",
     "@pinia/nuxt": "latest",
-    "nuxt-typed-router": "latest",
+    "is-buffer": "latest",
     "pinia": "latest",
     "prettier": "latest",
     "prettier-plugin-organize-imports": "latest",
-    "prettier-plugin-tailwindcss": "latest"
+    "prettier-plugin-tailwindcss": "latest",
+    "remark-wiki-link": "^2.0.1"
   },
   "trustedDependencies": [
     "sharp",
