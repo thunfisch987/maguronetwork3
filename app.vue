@@ -2,7 +2,7 @@
 	<div>
 		<!-- <VitePwaManifest /> -->
 		<NuxtLoadingIndicator :throttle="0" />
-		<NuxtLayout>
+		<NuxtLayout name="default">
 			<NuxtPage />
 		</NuxtLayout>
 	</div>
