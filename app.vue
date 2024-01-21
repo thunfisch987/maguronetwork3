@@ -10,6 +10,6 @@
 
 <script setup lang="ts">
 useHead({
-	title: useRoute().name === 'index' ? 'MaguroNetwork' : useRoute().name,
+	title: useRoute().name === 'index' ? 'MaguroNetwork' : useRoute().name?.toString(),
 });
 </script>
