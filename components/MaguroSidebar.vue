@@ -67,18 +67,20 @@ type NavLink = {
 const { data: navigation } = await useAsyncData('navigation', () =>
 	fetchContentNavigation(),
 );
-const navLinks = computed(() => {
-	return navigation.value
-		?.map<NavLink>((item) => {
-			return { name: item.title, to: item._path };
-		})
-		.concat([
-			{
-				name: 'RocketGame',
-				to: 'https://rg.littlebitgay.de',
-				external: true,
-			},
-		]);
-});
+const navLinks = navigation.value
+	?.map<NavLink>((item) => {
+		return { name: item.title, to: item._path };
+	})
+	.toSorted((a, b) => {
+		return a.to > b.to ? 1 : -1;
+	})
+	.concat([
+		{
+			name: 'RocketGame',
+			to: 'https://rg.littlebitgay.de',
+			external: true,
+		},
+	]);
+
 const appStore = useAppStore();
 </script>
