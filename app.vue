@@ -5,11 +5,4 @@
 	</NuxtLayout>
 </template>
 
-<script setup lang="ts">
-useHead({
-	title:
-		useRoute().name === 'index'
-			? 'MaguroNetwork'
-			: useRoute().name?.toString(),
-});
-</script>
+<script setup lang="ts"></script>
