@@ -5,7 +5,7 @@
 			aria-label="Global"
 		>
 			<div class="flex mr-auto">
-				<a href="#">
+				<a href="/">
 					<span class="sr-only">MaguroNetwork</span>
 					<UIcon
 						class="h-8 w-auto"
