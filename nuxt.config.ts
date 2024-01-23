@@ -5,11 +5,6 @@ export default defineNuxtConfig({
 		enabled: true,
 	},
 	modules: ['@nuxt/ui', '@pinia/nuxt', '@nuxt/content', "@nuxthq/studio"],
-	content: {
-		markdown: {
-			remarkPlugins: ['remark-wiki-link']
-		}
-	},
 	experimental: {
 		headNext: true,
 		writeEarlyHints: true,

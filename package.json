@@ -26,8 +26,7 @@
     "pinia": "latest",
     "prettier": "latest",
     "prettier-plugin-organize-imports": "latest",
-    "prettier-plugin-tailwindcss": "latest",
-    "remark-wiki-link": "^2.0.1"
+    "prettier-plugin-tailwindcss": "latest"
   },
   "trustedDependencies": [
     "sharp",
