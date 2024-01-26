@@ -6,7 +6,7 @@ export const useAppStore = defineStore('appState', () => {
 	function toggleSidebar() {
 		sidebarState.value = !sidebarState.value;
 	}
-	
+
 	// colorMode State stuff
 	const colorMode = useColorMode();
 	const isDark = computed(() => colorMode.value === 'dark');

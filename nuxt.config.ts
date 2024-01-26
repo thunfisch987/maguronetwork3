@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 	devtools: {
 		enabled: true,
 	},
-	modules: ['@nuxt/ui', '@pinia/nuxt', '@nuxt/content', "@nuxthq/studio"],
+	modules: ['@nuxt/ui', '@pinia/nuxt', '@nuxt/content', '@nuxthq/studio'],
 	experimental: {
 		headNext: true,
 		writeEarlyHints: true,
