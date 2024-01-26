@@ -6,7 +6,10 @@ const config = {
 	singleQuote: true,
 	trailingComma: 'all',
 	singleAttributePerLine: true,
-	plugins: ['prettier-plugin-tailwindcss', 'prettier-plugin-organize-imports'],
+	plugins: [
+		'prettier-plugin-tailwindcss',
+		'prettier-plugin-organize-imports',
+	],
 	tailwindConfig: './tailwind.config.ts',
 };
 
