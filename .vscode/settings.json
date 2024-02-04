@@ -29,5 +29,8 @@
 	"prettier.enableDebugLogs": true,
 	"editor.fontFamily": "'FiraCode Nerd Font', Noto Serif",
 	"editor.fontLigatures": true,
-	"vscode-pets.theme": "castle"
+	"vscode-pets.theme": "castle",
+	"[markdown]": {
+		"editor.formatOnSave": false
+	}
 }
