@@ -1,5 +1,5 @@
 ---
-layout: energy
+layout: energy-drink
 ---
 
-# Ultra Ros
+# Ultra Rosa

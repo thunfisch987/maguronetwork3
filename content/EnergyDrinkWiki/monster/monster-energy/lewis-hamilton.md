@@ -1,5 +1,5 @@
 ---
-layout: energy
+layout: energy-drink
 ---
 
-# Lewis Hamilton Zero Sugar
+# Lewis Hamilton (Zero)

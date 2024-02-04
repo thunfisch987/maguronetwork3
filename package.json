@@ -19,6 +19,7 @@
     "@biomejs/biome": "latest",
     "@iconify-json/logos": "latest",
     "@nuxt/content": "latest",
+    "@nuxt/image": "latest",
     "@nuxt/ui": "latest",
     "@nuxthq/studio": "latest",
     "@pinia/nuxt": "latest",
