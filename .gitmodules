@@ -1,0 +1,3 @@
+[submodule "public/img"]
+	path = public/img
+	url = git@github.com:thunfisch987/mn3-images
