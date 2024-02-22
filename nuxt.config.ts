@@ -5,12 +5,12 @@ export default defineNuxtConfig({
 		enabled: true,
 	},
 	modules: [
-        '@nuxt/ui',
-        '@pinia/nuxt',
-        '@nuxt/content',
-        '@nuxthq/studio',
-        "@nuxt/image"
-    ],
+		'@nuxt/ui',
+		'@pinia/nuxt',
+		'@nuxt/content',
+		'@nuxthq/studio',
+		'@nuxt/image',
+	],
 	experimental: {
 		headNext: true,
 		writeEarlyHints: true,
@@ -23,6 +23,7 @@ export default defineNuxtConfig({
 	},
 	typescript: {
 		shim: false,
+		strict: true,
 	},
 	tailwindcss: {
 		configPath: '~/tailwind.config.ts',
