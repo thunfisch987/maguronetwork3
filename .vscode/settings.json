@@ -1,36 +1,49 @@
 {
-	"json.schemaDownload.enable": true,
-	"search.exclude": {
-		"**/node_modules": true,
-		"**/bower_components": true,
-		"**/*.code-search": true,
-		"**/.nuxt": true,
-		"pnpm-lock.yaml": true
+	"[markdown]": {
+		"editor.formatOnSave": false
 	},
-	"editor.useTabStops": true,
-	"editor.tabSize": 4,
-	"editor.detectIndentation": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"tailwindCSS.includeLanguages": { "vue": "html", "vue-html": "html" },
-	"files.associations": {
-		"*.css": "tailwindcss"
-	},
-	"tailwindCSS.experimental.configFile": "tailwind.config.ts",
-	"tailwindCSS.experimental.classRegex": [
-		["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"]
-	],
-	"tailwindCSS.classAttributes": ["class", "className", "ngClass", "ui"],
-	"tailwindCSS.emmetCompletions": true,
+	"editor.detectIndentation": true,
+	"editor.fontFamily": "'FiraCode Nerd Font', Noto Serif",
+	"editor.fontLigatures": true,
 	"editor.quickSuggestions": {
 		"strings": "on"
 	},
+	"editor.tabSize": 4,
+	"editor.useTabStops": true,
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"json.schemaDownload.enable": true,
 	"npm.autoDetect": "on",
 	"npm.packageManager": "bun",
 	"prettier.enableDebugLogs": true,
-	"editor.fontFamily": "'FiraCode Nerd Font', Noto Serif",
-	"editor.fontLigatures": true,
-	"vscode-pets.theme": "castle",
-	"[markdown]": {
-		"editor.formatOnSave": false
-	}
+	"search.exclude": {
+		"**/*.code-search": true,
+		"**/.nuxt": true,
+		"**/bower_components": true,
+		"**/node_modules": true,
+		"pnpm-lock.yaml": true
+	},
+	"tailwindCSS.classAttributes": ["class", "className", "ngClass", "ui"],
+	"tailwindCSS.emmetCompletions": true,
+	"tailwindCSS.experimental.classRegex": [
+		[
+			"ui:\\s*{([^)]*)\\s*}",
+			"[\"'`]([^\"'`]*).*?[\"'`]",
+			"tw`(.*?)`",
+			"tw\\('(.*?)'\\)"
+		]
+	],
+	"tailwindCSS.experimental.configFile": "tailwind.config.ts",
+	"tailwindCSS.includeLanguages": {
+		"vue": "html",
+		"vue-html": "html"
+	},
+	"tailwindCSS.lint.cssConflict": "warning",
+	"tailwindCSS.lint.invalidApply": "warning",
+	"tailwindCSS.lint.invalidTailwindDirective": "warning",
+	"tailwindCSS.lint.recommendedVariantOrder": "warning",
+	"tailwindCSS.validate": true,
+	"vscode-pets.theme": "castle"
 }
