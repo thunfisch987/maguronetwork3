@@ -1,5 +1,5 @@
 ---
-layout: energy
+layout: energy-overview
 ---
 
 # All Monster Energy Drinks

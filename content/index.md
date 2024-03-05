@@ -1,3 +1,5 @@
 ---
+layout: main
+title: MaguroNetwork
 ---
-# MaguroNetwork
+yeet

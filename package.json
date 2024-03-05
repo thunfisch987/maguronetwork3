@@ -1,36 +1,48 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "@types/bun": "latest",
-    "@types/node": "latest",
-    "nuxt": "latest"
-  },
-  "dependencies": {
-    "@biomejs/biome": "latest",
-    "@iconify-json/logos": "latest",
-    "@nuxt/content": "latest",
-    "@nuxt/image": "latest",
-    "@nuxt/ui": "latest",
-    "@nuxthq/studio": "latest",
-    "@pinia/nuxt": "latest",
-    "is-buffer": "latest",
-    "pinia": "latest",
-    "prettier": "latest",
-    "prettier-plugin-organize-imports": "latest",
-    "prettier-plugin-tailwindcss": "latest"
-  },
-  "trustedDependencies": ["sharp", "esbuild"],
-  "overrides": {
-    "@polka/url": "next"
-  }
+	"name": "nuxt-app",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare"
+	},
+	"devDependencies": {
+		"@nuxt/devtools": "latest",
+		"@nuxtjs/color-mode": "latest",
+		"@types/bun": "latest",
+		"@types/node": "latest",
+		"nuxt": "latest",
+		"nuxt-icon": "latest"
+	},
+	"dependencies": {
+		"@biomejs/biome": "latest",
+		"@iconify-json/logos": "latest",
+		"@nuxt/content": "npm:@nuxt/content-edge@latest",
+		"@nuxt/image": "latest",
+		"@nuxthq/studio": "latest",
+		"@nuxtjs/tailwindcss": "latest",
+		"@pinia/nuxt": "latest",
+		"@tresjs/nuxt": "latest",
+		"class-variance-authority": "latest",
+		"clsx": "latest",
+		"is-buffer": "latest",
+		"lucide-vue-next": "latest",
+		"pinia": "latest",
+		"prettier": "latest",
+		"prettier-plugin-organize-imports": "latest",
+		"prettier-plugin-tailwindcss": "latest",
+		"radix-vue": "latest",
+		"shadcn-nuxt": "latest",
+		"tailwind-merge": "latest",
+		"tailwindcss-animate": "latest",
+		"three": "latest"
+	},
+	"trustedDependencies": ["sharp", "esbuild"],
+	"overrides": {
+		"@polka/url": "next",
+		"@nuxt/content": "npm:@nuxt/content-edge@latest"
+	}
 }

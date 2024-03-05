@@ -5,44 +5,44 @@
 			aria-label="Global"
 		>
 			<div class="flex mr-auto">
-				<a href="/">
+				<NuxtLink to="/">
 					<span class="sr-only">MaguroNetwork</span>
-					<UIcon
+					<Icon
 						class="h-8 w-auto"
 						name="i-logos-nuxt-icon"
-						dynamic
 					/>
-				</a>
+				</NuxtLink>
 			</div>
 			<ClientOnly>
-				<UButton
-					:icon="
-						appStore.isDark
-							? 'i-heroicons-moon-20-solid'
-							: 'i-heroicons-sun-20-solid'
-					"
-					color="gray"
+				<Button
 					variant="ghost"
 					aria-label="Theme"
 					class="ml-auto mr-4"
-					@click="appStore.toggleColorMode"
-				/>
+					size="icon"
+					@click="appStore.toggleColorMode()"
+				>
+					<Moon v-if="appStore.isDark" />
+					<Sun v-else />
+				</Button>
 				<template #fallback>
-					<div class="w-8 h-8"></div>
+					<div class="w-8 h-8">n</div>
 				</template>
 			</ClientOnly>
-			<UButton
-				color="gray"
-				icon="i-heroicons-bars-3"
-				variant="ghost"
-				size="xl"
-				@click="appStore.toggleSidebar()"
-			/>
+			<Sheet v-model:open="open">
+				<SheetTrigger
+					variant="ghost"
+					size="icon"
+				>
+					<Menu />
+				</SheetTrigger>
+				<MaguroSidebar />
+			</Sheet>
 		</nav>
-		<MaguroSidebar />
 	</header>
 </template>
 
 <script setup lang="ts">
+const open = useState('open', () => false);
+import { Menu, Moon, Sun } from 'lucide-vue-next';
 const appStore = useAppStore();
 </script>

@@ -1,75 +1,52 @@
 <template>
-	<USlideover
-		v-model="appStore.sidebarState"
-		:overlay="false"
-		class="backdrop-blur-sm"
-		:ui="{
-			background: 'bg-transparent dark:bg-transparent',
-		}"
-	>
-		<UCard
-			class="flex flex-col flex-1"
-			:ui="{
-				body: { base: 'flex-1' },
-				ring: '',
-				background: 'bg-transparent dark:bg-transparent',
-				header: {
-					base: 'flex items-center justify-between',
-					padding: 'p-6 lg:px-8',
-				},
-				divide: 'divide-y divide-gray-100 dark:divide-gray-800',
-			}"
-		>
-			<template #header>
-				<div class="flex mr-auto">
-					<a href="/">
-						<span class="sr-only">MaguroNetwork</span>
-						<UIcon
-							class="h-8 w-auto"
-							name="i-logos-nuxt-icon"
-						/>
-					</a>
-				</div>
-				<UButton
-					color="gray"
-					variant="ghost"
-					icon="i-heroicons-x-mark-20-solid"
-					size="xl"
-					class="ml-auto"
-					@click="appStore.toggleSidebar()"
-				/>
-			</template>
-
-			<ULink
-				v-for="item in navLinks"
-				:key="item.name"
-				:to="item.to"
-				class="-mx-3 block rounded-lg px-3 py-2 text-center text-lg font-semibold leading-7 text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-950"
+	<SheetContent>
+		<SheetHeader>
+			<SheetTitle
+				><Icon
+					class="h-8 w-auto"
+					name="i-logos-nuxt-icon"
+				/>Navigation</SheetTitle
 			>
-				{{ item.name }}
-				<UIcon
-					v-if="item.external"
-					name="i-heroicons-arrow-up-right"
-				/>
-			</ULink>
-
-			<template #footer></template>
-		</UCard>
-	</USlideover>
+			<SheetDescription>These are the other pages</SheetDescription>
+		</SheetHeader>
+		<NuxtLink
+			v-for="item in navLinks"
+			:key="item.name"
+			:to="item.to"
+			class="-mx-3 flex rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-950"
+		>
+			<!-- <UIcon -->
+			<!-- 	v-if="item.icon" -->
+			<!-- 	:name="item.icon" -->
+			<!-- 	class="text-2xl ml-0" -->
+			<!-- 	dynamic -->
+			<!-- /> -->
+			<span class="mx-auto">{{ item.name }}</span>
+			<ExternalLink
+				v-if="item.external"
+				name="i-heroicons-arrow-up-right"
+			/>
+		</NuxtLink>
+		<SheetFooter />
+	</SheetContent>
 </template>
 <script setup lang="ts">
-type NavLink = {
+import { ExternalLink } from 'lucide-vue-next';
+
+const open = useState('open');
+type MaguroNavLink = {
 	name: string;
 	to: string;
 	external?: boolean;
 	original?: string;
+	icon?: string;
 };
 const { data: navigation } = await useAsyncData('navigation', () =>
 	fetchContentNavigation(),
 );
 const navLinks = navigation.value
-	?.map<NavLink>((item) => {
-		return { name: item.title, to: item._path };
+	?.map<MaguroNavLink>((item) => {
+		return { name: item.title, to: item._path, icon: item.icon };
 	})
 	.toSorted((a, b) => {
 		return a.to > b.to ? 1 : -1;
@@ -81,6 +58,4 @@ const navLinks = navigation.value
 			external: true,
 		},
 	]);
-
-const appStore = useAppStore();
 </script>

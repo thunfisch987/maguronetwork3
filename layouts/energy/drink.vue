@@ -7,20 +7,24 @@
 			:surrounding="surrounding"
 		></Surround>
 	</div>
-	{{ pending }}
 </template>
 
 <script setup lang="ts">
 const route = useRoute();
-const { data: surrounding, pending } = useAsyncData(
+const { data: surrounding, pending } = useLazyAsyncData(
 	`surround-${route.path}`,
 	() =>
 		queryContent('energydrinkwiki/monster')
-			.only(['_path', 'title'])
 			// .where({ _path: { $ne: '/energydrinkwiki/monster' } })
-			.findSurround(route.path),
+			.findSurround(
+				route.path.endsWith('/') ? route.path.slice(0, -1) : route.path,
+			),
 	{
-		lazy: true,
+		transform(surrounding) {
+			return surrounding.map((doc) =>
+				doc.navigation === false ? null : doc,
+			);
+		},
 	},
 );
 </script>

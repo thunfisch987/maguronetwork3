@@ -9,21 +9,14 @@
 				:alt="props.brandname"
 		/></template>
 		<template #footer>
-			<NuxtLink :to="{name: props.link}">{{ props.brandname }}</NuxtLink>
+			<NuxtLink :to="{ name: '' }">{{ props.brandname }}</NuxtLink>
 		</template>
 	</UCard>
 </template>
 
 <script setup lang="ts">
-import type { RoutesNamesList } from '@typed-router/__routes';
-
-
-type EnergyDrinkWikiRoutes = "monster-energy"|"juiced-monster"|"zero-zucker"|"rehab-monster"
-type EnergyDrinkWikiRoutes2 = `EnergyDrinkWiki-${EnergyDrinkWikiRoutes}`
-
 const props = defineProps<{
 	brandname: string;
 	image: string;
-	link: EnergyDrinkWikiRoutes2;
 }>();
 </script>
