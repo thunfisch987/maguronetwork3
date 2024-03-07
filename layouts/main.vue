@@ -1,4 +1,5 @@
 <template>
+	<slot />
 	<div class="griddy">
 		<Card v-for="item in navigation">
 			<CardHeader>
@@ -15,7 +16,6 @@
 		</Card>
 				<CardFooter><DynamicIcon :iconname="item.icon" /></CardFooter>
 	</div>
-	<slot />
 </template>
 
 <script setup lang="ts">
