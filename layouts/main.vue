@@ -1,20 +1,23 @@
 <template>
 	<slot />
 	<div class="griddy">
-		<Card v-for="item in navigation">
-			<CardHeader>
-				<CardTitle
-					>{{ item.title
-					}}<Icon
-						v-if="item.icon"
-						:name="item.icon"
-				/></CardTitle>
-				<CardDescription></CardDescription>
-			</CardHeader>
-			<CardContent> Card Content </CardContent>
-			<CardFooter> Card Footer </CardFooter>
-		</Card>
+		<NuxtLink
+			v-for="item in navigation"
+			:to="item._path"
+		>
+			<Card
+				class="hover:bg-muted hover:scale-105 ease-in-out duration-300"
+			>
+				<CardHeader>
+					<CardTitle>{{
+						item.title
+					}}</CardTitle>
+					<CardDescription></CardDescription>
+				</CardHeader>
+				<CardContent> Card Content </CardContent>
 				<CardFooter><DynamicIcon :iconname="item.icon" /></CardFooter>
+			</Card>
+		</NuxtLink>
 	</div>
 </template>
 
