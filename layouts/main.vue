@@ -19,8 +19,16 @@
 </template>
 
 <script setup lang="ts">
-const { data: navigation } = useLazyAsyncData('navigation', () =>
-	fetchContentNavigation(),
+const { data: navigation } = useLazyAsyncData(
+	'navigation',
+	() => fetchContentNavigation(),
+	{
+		transform(navigation) {
+			return navigation.filter((doc) =>
+				doc.title === 'MaguroNetwork' ? false : true,
+			);
+		},
+	},
 );
 </script>
 
