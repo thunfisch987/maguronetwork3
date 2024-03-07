@@ -76,3 +76,19 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+.lead {
+	@apply text-xl text-muted-foreground;
+}
+
+.large {
+	@apply text-lg font-semibold;
+}
+
+.small {
+	@apply text-sm font-medium leading-none;
+}
+
+.muted {
+	@apply text-sm text-muted-foreground;
+}
