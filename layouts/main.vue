@@ -41,5 +41,6 @@ const { data: navigation } = useLazyAsyncData(
 		minmax(var(--auto-grid-min-size), 1fr)
 	);
 	gap: 1rem;
+	margin-inline: 2rem;
 }
 </style>
