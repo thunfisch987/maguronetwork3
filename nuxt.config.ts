@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import IconsResolver from 'unplugin-icons/resolver';
+import Icons from 'unplugin-icons/vite';
+import Components from 'unplugin-vue-components/vite';
 
 export default defineNuxtConfig({
 	devtools: {
@@ -12,7 +15,7 @@ export default defineNuxtConfig({
 		'@nuxtjs/tailwindcss',
 		'shadcn-nuxt',
 		'@nuxtjs/color-mode',
-		'nuxt-icon',
+		'unplugin-icons/nuxt',
 	],
 	experimental: {
 		headNext: true,
@@ -51,5 +54,20 @@ export default defineNuxtConfig({
 	shadcn: {
 		prefix: '',
 		componentDir: './components/ui',
+	},
+	vue: {
+		template: {
+			compilerOptions: {
+				isCustomElement: (tag) => tag.startsWith('i-'),
+			},
+		},
+	},
+	vite: {
+		plugins: [
+			Components({
+				resolvers: [IconsResolver()],
+			}),
+			Icons({}),
+		],
 	},
 });
