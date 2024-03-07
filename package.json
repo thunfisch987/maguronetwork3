@@ -25,7 +25,6 @@
 		"@nuxthq/studio": "latest",
 		"@nuxtjs/tailwindcss": "latest",
 		"@pinia/nuxt": "latest",
-		"@tresjs/nuxt": "latest",
 		"class-variance-authority": "latest",
 		"clsx": "latest",
 		"is-buffer": "latest",
@@ -38,7 +37,8 @@
 		"shadcn-nuxt": "latest",
 		"tailwind-merge": "latest",
 		"tailwindcss-animate": "latest",
-		"three": "latest"
+		"unplugin-icons": "latest",
+		"unplugin-vue-components": "latest"
 	},
 	"trustedDependencies": ["sharp", "esbuild"],
 	"overrides": {
