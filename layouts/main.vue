@@ -13,6 +13,7 @@
 			<CardContent> Card Content </CardContent>
 			<CardFooter> Card Footer </CardFooter>
 		</Card>
+				<CardFooter><DynamicIcon :iconname="item.icon" /></CardFooter>
 	</div>
 	<slot />
 </template>

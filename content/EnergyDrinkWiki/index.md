@@ -1,5 +1,7 @@
 ---
 layout: energy
+navigation:
+    icon: 'soda'
 ---
 
 # Energy Drink Wiki

@@ -1,5 +1,5 @@
 ---
 navigation:
-    icon: 'i-material-symbols-sound-detection-dog-barking'
+    icon: 'dog'
 ---
 # Doggos
