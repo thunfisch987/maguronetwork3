@@ -9,6 +9,11 @@
 				:value="page"
 			/>
 		</NuxtLayout>
+		<ContentRenderer
+			v-else-if="page?.body"
+			:value="page"
+		/>
+		<span v-else>something went wrong</span>
 	</main>
 </template>
 
