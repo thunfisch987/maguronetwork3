@@ -2,10 +2,7 @@
 	<SheetContent>
 		<SheetHeader>
 			<SheetTitle
-				><Icon
-					class="h-8 w-auto"
-					name="i-logos-nuxt-icon"
-				/>Navigation</SheetTitle
+				><i-logos-nuxt-icon class="h-8 w-auto" />Navigation</SheetTitle
 			>
 			<SheetDescription>These are the other pages</SheetDescription>
 		</SheetHeader>

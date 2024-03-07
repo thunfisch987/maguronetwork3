@@ -7,10 +7,7 @@
 			<div class="flex mr-auto">
 				<NuxtLink to="/">
 					<span class="sr-only">MaguroNetwork</span>
-					<Icon
-						class="h-8 w-auto"
-						name="i-logos-nuxt-icon"
-					/>
+					<i-logos-nuxt-icon class="h-8 w-auto" />
 				</NuxtLink>
 			</div>
 			<ClientOnly>
@@ -21,11 +18,11 @@
 					size="icon"
 					@click="appStore.toggleColorMode()"
 				>
-					<Moon v-if="appStore.isDark" />
+					<Moon v-if="!appStore.isDark" />
 					<Sun v-else />
 				</Button>
 				<template #fallback>
-					<div class="w-8 h-8">n</div>
+					<div class="w-10 h-10 ml-auto mr-4"></div>
 				</template>
 			</ClientOnly>
 			<Sheet v-model:open="open">
@@ -42,7 +39,8 @@
 </template>
 
 <script setup lang="ts">
-const open = useState('open', () => false);
 import { Menu, Moon, Sun } from 'lucide-vue-next';
+
+const open = useState('open', () => false);
 const appStore = useAppStore();
 </script>
