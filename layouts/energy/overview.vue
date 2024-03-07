@@ -33,9 +33,9 @@
 <script setup lang="ts">
 const route = useRoute();
 const { data: overvue, pending } = useLazyAsyncData('overvue', () =>
-	fetchContentNavigation(queryContent('energydrinkwiki', 'monster')),
+	fetchContentNavigation(queryContent(route.path)),
 );
-const preStyle = ['hover:bg-slate-700'];
+const preStyle = ['hover:bg-muted'];
 </script>
 
 <style>
