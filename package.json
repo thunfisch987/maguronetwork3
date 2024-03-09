@@ -22,7 +22,6 @@
     "@iconify-json/logos": "latest",
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
     "@nuxt/image": "latest",
-    "@nuxthq/studio": "latest",
     "@nuxtjs/tailwindcss": "latest",
     "@pinia/nuxt": "latest",
     "class-variance-authority": "latest",

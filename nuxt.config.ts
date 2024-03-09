@@ -10,7 +10,6 @@ export default defineNuxtConfig({
 	modules: [
 		'@pinia/nuxt',
 		'@nuxt/content',
-		'@nuxthq/studio',
 		'@nuxt/image',
 		'@nuxtjs/tailwindcss',
 		'shadcn-nuxt',
