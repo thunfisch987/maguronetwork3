@@ -10,12 +10,12 @@
 
 <script setup lang="ts">
 import {
-	Dog,
 	CupSoda,
-	JapaneseYen,
-	Shuffle,
-	PawPrint,
+	Dog,
 	Gamepad2,
+	JapaneseYen,
+	PawPrint,
+	Shuffle,
 } from 'lucide-vue-next';
 const props = defineProps<{
 	iconname: 'dog' | 'soda' | 'weeb' | 'random' | 'veg' | 'razer';

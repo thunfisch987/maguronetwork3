@@ -27,9 +27,7 @@ const { data: navigation } = useLazyAsyncData(
 	() => fetchContentNavigation(),
 	{
 		transform(navigation) {
-			return navigation.filter((doc) =>
-				doc.title === 'MaguroNetwork' ? false : true,
-			);
+			return navigation.filter((doc) => doc.title !== 'MaguroNetwork');
 		},
 	},
 );

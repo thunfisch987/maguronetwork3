@@ -1,38 +1,32 @@
 <script setup lang="ts">
-import { type HTMLAttributes, computed } from 'vue'
 import {
-  DialogClose,
-  DialogContent,
-  type DialogContentEmits,
-  type DialogContentProps,
-  DialogOverlay,
-  DialogPortal,
-  useForwardPropsEmits,
-} from 'radix-vue'
-import { X } from 'lucide-vue-next'
-import { type SheetVariants, sheetVariants } from '.'
-import { cn } from '@/lib/utils'
+	type DialogContentEmits,
+	type DialogContentProps,
+	useForwardPropsEmits,
+} from 'radix-vue';
+import { type HTMLAttributes, computed } from 'vue';
+import type { SheetVariants } from '.';
 
 interface SheetContentProps extends DialogContentProps {
-  class?: HTMLAttributes['class']
-  side?: SheetVariants['side']
+	class?: HTMLAttributes['class'];
+	side?: SheetVariants['side'];
 }
 
 defineOptions({
-  inheritAttrs: false,
-})
+	inheritAttrs: false,
+});
 
-const props = defineProps<SheetContentProps>()
+const props = defineProps<SheetContentProps>();
 
-const emits = defineEmits<DialogContentEmits>()
+const emits = defineEmits<DialogContentEmits>();
 
 const delegatedProps = computed(() => {
-  const { class: _, side, ...delegated } = props
+	const { class: _, side, ...delegated } = props;
 
-  return delegated
-})
+	return delegated;
+});
 
-const forwarded = useForwardPropsEmits(delegatedProps, emits)
+const forwarded = useForwardPropsEmits(delegatedProps, emits);
 </script>
 
 <template>

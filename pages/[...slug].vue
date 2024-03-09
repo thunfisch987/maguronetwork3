@@ -23,7 +23,7 @@ const { data: page } = await useAsyncData(`page-${route.path}`, () =>
 	queryContent(route.path).findOne(),
 );
 if (!page.value) {
-	throw createError({ statusCode: 404, statusMessage: `Page not found lol` });
+	throw createError({ statusCode: 404, statusMessage: 'Page not found lol' });
 }
 useHead({
 	title:
