@@ -20,7 +20,7 @@
   "dependencies": {
     "@biomejs/biome": "latest",
     "@iconify-json/logos": "latest",
-    "@nuxt/content": "npm:@nuxt/content-edge@latest",
+    "@nuxt/content": "latest",
     "@nuxt/image": "latest",
     "@nuxtjs/tailwindcss": "latest",
     "@pinia/nuxt": "latest",
@@ -41,7 +41,6 @@
   },
   "trustedDependencies": ["sharp", "esbuild"],
   "overrides": {
-    "@polka/url": "next",
-    "@nuxt/content": "npm:@nuxt/content-edge@latest"
+    "@polka/url": "next"
   }
 }
