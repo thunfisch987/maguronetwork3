@@ -39,6 +39,7 @@
 </template>
 
 <script setup lang="ts">
+import { Menu, Moon, Sun } from 'lucide-vue-next';
 const open = useState('open', () => false);
 const appStore = useAppStore();
 </script>

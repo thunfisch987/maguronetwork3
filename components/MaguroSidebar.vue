@@ -28,6 +28,8 @@
 	</SheetContent>
 </template>
 <script setup lang="ts">
+import { ExternalLink } from 'lucide-vue-next';
+
 const open = useState('open');
 type MaguroNavLink = {
 	name: string;
