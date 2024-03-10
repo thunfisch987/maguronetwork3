@@ -55,10 +55,8 @@ export default defineNuxtConfig({
 		componentDir: './components/ui',
 	},
 	vue: {
-		template: {
-			compilerOptions: {
-				isCustomElement: (tag) => tag.startsWith('i-'),
-			},
+		compilerOptions: {
+			isCustomElement: (tag) => tag.startsWith('i-'),
 		},
 	},
 	vite: {
