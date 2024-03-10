@@ -38,8 +38,14 @@ type MaguroNavLink = {
 	original?: string;
 	icon?: string;
 };
-const { data: navigation } = await useAsyncData('navigation', () =>
-	fetchContentNavigation(),
+const { data: navigation } = await useAsyncData(
+	'navigation',
+	() => fetchContentNavigation(),
+	{
+		transform(navigation) {
+			return navigation.filter((doc) => doc.title !== 'MaguroNetwork');
+		},
+	},
 );
 const navLinks = navigation.value
 	?.map<MaguroNavLink>((item) => {

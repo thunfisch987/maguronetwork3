@@ -9,9 +9,7 @@
 				class="hover:bg-muted hover:scale-105 ease-in-out duration-300"
 			>
 				<CardHeader>
-					<CardTitle>{{
-						item.title
-					}}</CardTitle>
+					<CardTitle>{{ item.title }}</CardTitle>
 					<CardDescription></CardDescription>
 				</CardHeader>
 				<CardContent> Card Content </CardContent>
@@ -22,15 +20,10 @@
 </template>
 
 <script setup lang="ts">
-const { data: navigation } = useLazyAsyncData(
-	'navigation',
-	() => fetchContentNavigation(),
-	{
-		transform(navigation) {
-			return navigation.filter((doc) => doc.title !== 'MaguroNetwork');
-		},
-	},
-);
+import type { NavItem } from '@nuxt/content/types';
+
+const { data: navigation }: { data: globalThis.Ref<NavItem[] | null> } =
+	useNuxtData('navigation');
 </script>
 
 <style>
