@@ -37,7 +37,8 @@
     "tailwind-merge": "latest",
     "tailwindcss-animate": "latest",
     "unplugin-icons": "latest",
-    "unplugin-vue-components": "latest"
+    "unplugin-vue-components": "latest",
+    "vue-tsc": "^2.0.6"
   },
   "trustedDependencies": ["sharp", "esbuild"],
   "overrides": {
