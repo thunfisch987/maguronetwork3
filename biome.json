@@ -51,6 +51,12 @@
 					}
 				}
 			}
+		},
+		{
+			"include": ["*.vue"],
+			"linter": {
+				"enabled": false
+			}
 		}
 	]
 }
