@@ -7,7 +7,7 @@
 			<div class="flex mr-auto">
 				<NuxtLink to="/">
 					<span class="sr-only">MaguroNetwork</span>
-					<i-logos-nuxt-icon class="h-8 w-auto" />
+					<ILogosNuxtIcon class="h-8 w-auto" />
 				</NuxtLink>
 			</div>
 			<ClientOnly>
