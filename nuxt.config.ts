@@ -8,14 +8,15 @@ export default defineNuxtConfig({
 		enabled: true,
 	},
 	modules: [
-		'@pinia/nuxt',
-		'@nuxt/content',
-		'@nuxt/image',
-		'@nuxtjs/tailwindcss',
-		'shadcn-nuxt',
-		'@nuxtjs/color-mode',
-		'unplugin-icons/nuxt',
-	],
+        '@pinia/nuxt',
+        '@nuxt/content',
+        '@nuxt/image',
+        '@nuxtjs/tailwindcss',
+        'shadcn-nuxt',
+        '@nuxtjs/color-mode',
+        'unplugin-icons/nuxt',
+        "@nuxt/eslint"
+    ],
 	experimental: {
 		headNext: true,
 		writeEarlyHints: true,
@@ -41,7 +42,10 @@ export default defineNuxtConfig({
 			htmlAttrs: {
 				lang: 'en',
 			},
-			meta: [{ name: 'theme-color', content: '#4e319f' }],
+			meta: [
+				{ name: 'theme-color', content: '#4e319f' },
+				{ name: 'color-scheme', content: 'dark' },
+			],
 		},
 	},
 	colorMode: {

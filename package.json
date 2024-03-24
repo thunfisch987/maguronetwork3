@@ -11,11 +11,14 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/eslint": "next",
     "@nuxtjs/color-mode": "latest",
     "@types/bun": "latest",
     "@types/node": "latest",
+    "eslint": "latest",
     "nuxt": "latest",
-    "nuxt-icon": "latest"
+    "nuxt-icon": "latest",
+    "typescript": "latest"
   },
   "dependencies": {
     "@biomejs/biome": "latest",
@@ -24,6 +27,7 @@
     "@nuxt/image": "latest",
     "@nuxtjs/tailwindcss": "latest",
     "@pinia/nuxt": "latest",
+    "@types/eslint": "latest",
     "class-variance-authority": "latest",
     "clsx": "latest",
     "is-buffer": "latest",
@@ -38,9 +42,9 @@
     "tailwindcss-animate": "latest",
     "unplugin-icons": "latest",
     "unplugin-vue-components": "latest",
-    "vue-tsc": "^2.0.6"
+    "vue-tsc": "latest"
   },
-  "trustedDependencies": ["sharp", "esbuild"],
+  "trustedDependencies": ["@biomejs/biome", "esbuild", "sharp"],
   "overrides": {
     "@polka/url": "next"
   }
