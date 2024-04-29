@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { cn } from '@/lib/utils';
-import { DialogTitle, type DialogTitleProps } from 'radix-vue';
+import { Separator, type SeparatorProps } from 'radix-vue';
 import { type HTMLAttributes, computed } from 'vue';
 
 const props = defineProps<
-	DialogTitleProps & { class?: HTMLAttributes['class'] }
+	SeparatorProps & { class?: HTMLAttributes['class'] }
 >();
 
 const delegatedProps = computed(() => {
@@ -15,10 +15,8 @@ const delegatedProps = computed(() => {
 </script>
 
 <template>
-	<DialogTitle
-		:class="cn('text-lg font-semibold text-foreground', props.class)"
-		v-bind="delegatedProps"
-	>
-		<slot />
-	</DialogTitle>
+  <Separator
+    v-bind="delegatedProps"
+    :class="cn('shrink-0 bg-border', props.orientation === 'vertical' ? 'w-px h-full' : 'h-px w-full', props.class)"
+  />
 </template>

@@ -1,7 +1,7 @@
 <template>
 	<h4
-		class="scroll-m-20 text-xl font-semibold tracking-tight"
 		:id="id"
+		class="scroll-m-20 text-xl font-semibold tracking-tight"
 	>
 		<a
 			v-if="id && generate"

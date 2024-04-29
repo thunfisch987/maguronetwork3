@@ -3,8 +3,8 @@
 		:is="icon"
 		:size="size"
 		:color="color"
-		:strokeWidth="strokeWidth"
-		:defaultClass="defaultClass"
+		:stroke-width="strokeWidth"
+		:default-class="defaultClass"
 	/>
 </template>
 

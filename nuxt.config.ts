@@ -15,11 +15,16 @@ export default defineNuxtConfig({
         'shadcn-nuxt',
         '@nuxtjs/color-mode',
         'unplugin-icons/nuxt',
-        "@nuxt/eslint"
+        '@nuxt/eslint',
+        "@nuxtjs/html-validator"
     ],
+	htmlValidator: {
+		usePrettier: true
+	},
 	experimental: {
 		headNext: true,
 		writeEarlyHints: true,
+		viewTransition: true
 	},
 	future: {
 		typescriptBundlerResolution: true,

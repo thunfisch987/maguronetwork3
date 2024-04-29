@@ -11,8 +11,9 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxt/eslint": "next",
+    "@nuxt/eslint": "latest",
     "@nuxtjs/color-mode": "latest",
+    "@nuxtjs/html-validator": "^1.7.2",
     "@types/bun": "latest",
     "@types/node": "latest",
     "eslint": "latest",
@@ -44,7 +45,7 @@
     "unplugin-vue-components": "latest",
     "vue-tsc": "latest"
   },
-  "trustedDependencies": ["@biomejs/biome", "esbuild", "sharp"],
+  "trustedDependencies": ["@biomejs/biome", "esbuild", "sharp", "vue-demi"],
   "overrides": {
     "@polka/url": "next"
   }

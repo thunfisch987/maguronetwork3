@@ -22,13 +22,14 @@
 					<Sun v-else />
 				</Button>
 				<template #fallback>
-					<div class="w-10 h-10 ml-auto mr-4"></div>
+					<div class="w-10 h-10 ml-auto mr-4" />
 				</template>
 			</ClientOnly>
 			<Sheet v-model:open="open">
 				<SheetTrigger
 					variant="ghost"
 					size="icon"
+					aria-label="Open Navigation Menu"
 				>
 					<Menu />
 				</SheetTrigger>

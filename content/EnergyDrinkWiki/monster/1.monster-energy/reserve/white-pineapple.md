@@ -2,4 +2,4 @@
 layout: energy-drink
 ---
 
-# Reserve White Pineapple
+# White Pineapple

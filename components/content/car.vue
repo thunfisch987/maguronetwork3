@@ -9,7 +9,7 @@
 			</CardDescription>
 		</CardHeader>
 		<CardContent>
-			<ContentSlot :use="$slots.default"></ContentSlot>
+			<ContentSlot :use="$slots.default" />
 		</CardContent>
 		<CardFooter>
 			<ContentSlot :use="$slots.footer" />

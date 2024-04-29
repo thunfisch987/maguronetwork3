@@ -1,7 +1,7 @@
 <template>
 	<h2
-		class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0"
 		:id="id"
+		class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0"
 	>
 		<a
 			v-if="id && generate"

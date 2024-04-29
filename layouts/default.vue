@@ -2,7 +2,7 @@
 	<div class="maingrid">
 		<MaguroNav />
 		<slot />
-		<footer></footer>
+		<footer />
 	</div>
 </template>
 

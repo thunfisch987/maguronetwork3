@@ -1,17 +1,18 @@
+<!-- eslint-disable @typescript-eslint/no-unused-vars -->
 <script setup lang="ts">
-import {
-	type DialogContentEmits,
-	type DialogContentProps,
-	useForwardPropsEmits,
-	DialogPortal,
-	DialogOverlay,
-	DialogContent,
-	DialogClose,
-} from 'radix-vue';
-import { type HTMLAttributes, computed } from 'vue';
-import { sheetVariants, type SheetVariants } from '.';
 import { cn } from '@/lib/utils';
 import { X } from 'lucide-vue-next';
+import {
+	DialogClose,
+	DialogContent,
+	type DialogContentEmits,
+	type DialogContentProps,
+	DialogOverlay,
+	DialogPortal,
+	useForwardPropsEmits,
+} from 'radix-vue';
+import { type HTMLAttributes, computed } from 'vue';
+import { type SheetVariants, sheetVariants } from '.';
 interface SheetContentProps extends DialogContentProps {
 	class?: HTMLAttributes['class'];
 	side?: SheetVariants['side'];
