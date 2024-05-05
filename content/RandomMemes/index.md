@@ -1,5 +1,0 @@
----
-navigation:
-    icon: 'random'
----
-# RandomMemes

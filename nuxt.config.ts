@@ -16,11 +16,7 @@ export default defineNuxtConfig({
         '@nuxtjs/color-mode',
         'unplugin-icons/nuxt',
         '@nuxt/eslint',
-        "@nuxtjs/html-validator"
     ],
-	htmlValidator: {
-		usePrettier: true
-	},
 	experimental: {
 		headNext: true,
 		writeEarlyHints: true,

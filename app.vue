@@ -1,14 +1,20 @@
 <template>
 	<NuxtLoadingIndicator />
-	<NuxtLayout name="default">
-		<!-- <NuxtPage :transition="{ name: 'page', mode: 'out-in' }" /> -->
+	<div class="maingrid">
+		<MaguroNav />
+		<footer />
+	</div>	<!-- <NuxtPage :transition="{ name: 'page', mode: 'out-in' }" /> -->
 		<NuxtPage />
-	</NuxtLayout>
 </template>
 
 <script setup lang="ts"></script>
 
 <style>
+.maingrid {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto, 1fr, auto;
+}
 /* .page-enter-active, */
 /* .page-leave-active { */
 /* 	transition: all 0.4s; */
