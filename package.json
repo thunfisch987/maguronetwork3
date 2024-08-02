@@ -31,7 +31,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "is-buffer": "^2.0.5",
-    "lucide-vue-next": "^0.417.0",
+    "lucide-vue-next": "^0.424.0",
     "pinia": "^2.2.0",
     "prettier": "^3.3.3",
     "prettier-plugin-organize-imports": "^4.0.0",
