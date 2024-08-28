@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import type { NavItem } from '@nuxt/content/types';
+import type { NavItem } from '@nuxt/content';
 import { CircleChevronRight } from 'lucide-vue-next';
 
 const { data: navigation }: { data: globalThis.Ref<NavItem[] | null> } =
