@@ -16,6 +16,7 @@ export default defineNuxtConfig({
         '@nuxtjs/color-mode',
         'unplugin-icons/nuxt',
         '@nuxt/eslint',
+        '@nuxthub/core'
     ],
 	experimental: {
 		headNext: true,
