@@ -25,6 +25,7 @@ export default defineNuxtConfig({
 	},
 	future: {
 		typescriptBundlerResolution: true,
+		compatibilityVersion: 4
 	},
 	typescript: {
 		shim: false,
@@ -58,7 +59,7 @@ export default defineNuxtConfig({
 	css: ['@/assets/tw.css'],
 	shadcn: {
 		prefix: '',
-		componentDir: './components/ui',
+		componentDir: './app/components/ui',
 	},
 	vue: {
 		compilerOptions: {
