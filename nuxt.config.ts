@@ -25,7 +25,6 @@ export default defineNuxtConfig({
 	},
 	future: {
 		typescriptBundlerResolution: true,
-		compatibilityVersion: 4,
 	},
 	typescript: {
 		shim: false,
