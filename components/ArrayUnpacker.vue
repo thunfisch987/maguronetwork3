@@ -15,9 +15,11 @@
 				<CardContent class="flex">
 					<NuxtImg
 						:src="`/img${yeet._path}.webp`"
-						height="50"
-						class="ml-auto mr-auto"
+						class="ml-auto mr-auto 20rem"
 						:class="{ active: active === yeet._path }"
+						placeholder
+						loading="lazy"
+						preload
 					/>
 				</CardContent>
 			</Card>
@@ -38,7 +40,7 @@
 </template>
 
 <script setup lang="ts">
-import type { NavItem } from '@nuxt/content/types';
+import type { NavItem } from '@nuxt/content';
 
 const props = defineProps<{ yeet: NavItem }>();
 const active = useState('active-energy');
