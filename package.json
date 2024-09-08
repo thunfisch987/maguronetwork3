@@ -12,12 +12,12 @@
   "devDependencies": {
     "@nuxt/devtools": "^1.4.1",
     "@nuxt/eslint": "^0.5.6",
+    "@nuxt/icon": "^1.5.1",
     "@nuxtjs/color-mode": "^3.4.4",
     "@types/bun": "^1.1.8",
     "@types/node": "^22.5.4",
     "eslint": "^9.10.0",
     "nuxt": "^3.13.1",
-    "@nuxt/icon": "^1.5.1",
     "typescript": "^5.5.4"
   },
   "dependencies": {

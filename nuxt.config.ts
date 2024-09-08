@@ -8,24 +8,24 @@ export default defineNuxtConfig({
 		enabled: true,
 	},
 	modules: [
-        '@pinia/nuxt',
-        '@nuxt/content',
-        '@nuxt/image',
-        '@nuxtjs/tailwindcss',
-        'shadcn-nuxt',
-        '@nuxtjs/color-mode',
-        'unplugin-icons/nuxt',
-        '@nuxt/eslint',
-        '@nuxthub/core'
-    ],
+		'@pinia/nuxt',
+		'@nuxt/content',
+		'@nuxt/image',
+		'@nuxtjs/tailwindcss',
+		'shadcn-nuxt',
+		'@nuxtjs/color-mode',
+		'unplugin-icons/nuxt',
+		'@nuxt/eslint',
+		'@nuxthub/core',
+	],
 	experimental: {
 		headNext: true,
 		writeEarlyHints: true,
-		viewTransition: true
+		viewTransition: true,
 	},
 	future: {
 		typescriptBundlerResolution: true,
-		compatibilityVersion: 4
+		compatibilityVersion: 4,
 	},
 	typescript: {
 		shim: false,
@@ -59,7 +59,7 @@ export default defineNuxtConfig({
 	css: ['@/assets/tw.css'],
 	shadcn: {
 		prefix: '',
-		componentDir: './app/components/ui',
+		componentDir: './components/ui',
 	},
 	vue: {
 		compilerOptions: {
