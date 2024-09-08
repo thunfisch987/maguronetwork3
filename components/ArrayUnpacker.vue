@@ -15,7 +15,7 @@
 				<CardContent class="flex">
 					<NuxtImg
 						:src="`/img${yeet._path}.webp`"
-						class="ml-auto mr-auto 20rem"
+						class="ml-auto mr-auto h-16"
 						:class="{ active: active === yeet._path }"
 						placeholder
 						loading="lazy"
