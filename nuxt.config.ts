@@ -7,6 +7,7 @@ export default defineNuxtConfig({
 	devtools: {
 		enabled: true,
 	},
+
 	modules: [
 		'@pinia/nuxt',
 		'@nuxt/content',
@@ -18,24 +19,29 @@ export default defineNuxtConfig({
 		'@nuxt/eslint',
 		'@nuxthub/core',
 	],
+
 	experimental: {
 		headNext: true,
 		writeEarlyHints: true,
 		viewTransition: true,
 	},
+
 	future: {
 		typescriptBundlerResolution: true,
 	},
+
 	typescript: {
 		shim: false,
 		strict: true,
 	},
+
 	tailwindcss: {
 		configPath: '~/tailwind.config.ts',
 		editorSupport: {
 			autocompleteUtil: true,
 		},
 	},
+
 	app: {
 		head: {
 			charset: 'utf-8',
@@ -50,21 +56,26 @@ export default defineNuxtConfig({
 			],
 		},
 	},
+
 	colorMode: {
 		preference: 'system',
 		fallback: 'dark',
 		classSuffix: '',
 	},
+
 	css: ['@/assets/tw.css'],
+
 	shadcn: {
 		prefix: '',
 		componentDir: './components/ui',
 	},
+
 	vue: {
 		compilerOptions: {
 			isCustomElement: (tag) => tag.startsWith('i-'),
 		},
 	},
+
 	vite: {
 		plugins: [
 			Components({
