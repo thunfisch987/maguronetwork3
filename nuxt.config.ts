@@ -84,4 +84,5 @@ export default defineNuxtConfig({
 			Icons({}),
 		],
 	},
+	compatibilityDate: '2024-10-20',
 });
