@@ -17,7 +17,7 @@
 
 <script setup lang="ts">
 const route = useRoute();
-const { data: surrounding } = useLazyAsyncData(
+const { data: surrounding } = await useLazyAsyncData(
 	`surround-${route.path}`,
 	() =>
 		queryContent('energydrinkwiki/monster')
