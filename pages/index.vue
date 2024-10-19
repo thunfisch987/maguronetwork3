@@ -9,7 +9,8 @@
 				class="contents"
 			>
 				<Card
-					class="hover:bg-muted hover:scale-105 ease-in-out duration-200 [&_#chevvie]:hover:scale-125 [&_#chevvie]:hover:text-primary"
+					tabindex="0"
+					class="hover:bg-muted focus:bg-muted focus:scale-105 hover:scale-105 ease-in-out duration-200 [&_#chevvie]:hover:scale-125 [&_#chevvie]:focus:scale-125 [&_#chevvie]:hover:text-primary [&_#chevvie]:focus:text-primary"
 				>
 					<CardHeader>
 						<CardTitle>{{ item.title }}</CardTitle>

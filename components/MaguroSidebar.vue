@@ -11,7 +11,7 @@
 			v-for="item in navLinks"
 			:key="item.name"
 			:to="item.to"
-			class="-mx-3 flex rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-950"
+			class="-mx-3 flex rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-950 focus:bg-gray-50 dark:focus:bg-gray-950"
 		>
 			<span class="mx-auto">{{ item.name }}</span>
 			<ExternalLink
