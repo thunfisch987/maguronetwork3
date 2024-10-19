@@ -7,7 +7,6 @@ export default defineNuxtConfig({
 	devtools: {
 		enabled: true,
 	},
-
 	modules: [
 		'@pinia/nuxt',
 		'@nuxt/content',
@@ -24,6 +23,7 @@ export default defineNuxtConfig({
 		headNext: true,
 		writeEarlyHints: true,
 		viewTransition: true,
+		asyncContext: true
 	},
 
 	future: {
@@ -84,5 +84,6 @@ export default defineNuxtConfig({
 			Icons({}),
 		],
 	},
+
 	compatibilityDate: '2024-10-20',
 });

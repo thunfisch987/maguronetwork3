@@ -1,33 +1,69 @@
 <template>
 	<div>
 		<slot />
-		<template v-if="overvue && overvue[0].children">
-			<Card
-				v-for="item in overvue[0].children[0].children"
-				:key="item._id"
-				class="mx-8 mt-3"
+		<ToggleGroup v-model="currentTag">
+			<ToggleGroupItem
+				v-for="tag in allTags"
+				:key="tag"
+				:value="tag"
 			>
-				<CardHeader>
-					<CardTitle>{{ item.title }}</CardTitle>
-					<Separator />
-				</CardHeader>
-				<CardContent class="flex flex-wrap">
-					<ArrayUnpacker
-						v-for="item2 in item.children"
-						:key="item2._id"
-						:yeet="item2"
-					/>
-				</CardContent>
-			</Card>
+				{{ tag }}
+			</ToggleGroupItem>
+		</ToggleGroup>
+		<template v-if="overvue">
+			<template
+				v-for="[key, value] of Object.entries(overvue)"
+				:key="key"
+			>
+				<br />
+				<h2
+					class="scroll-m-20 pb-2 text-4xl italic font-semibold tracking-tight transition-colors first:mt-0 text-center"
+				>
+					{{ key }}
+				</h2>
+				<ToggleGroup v-model="currentCategory">
+					<ToggleGroupItem
+						v-for="category in useCategoryFilter(
+							allCategories,
+							value,
+						)"
+						:key="category"
+						:value="category"
+					>
+						{{ category }}
+					</ToggleGroupItem>
+				</ToggleGroup>
+				<div class="flex flex-wrap justify-center">
+					<template
+						v-for="item2 in value"
+						:key="item2.title"
+					>
+						<NuxtLink
+							:to="item2._path"
+							class="mx-auto my-4"
+						>
+							<NuxtImg
+								:src="`/img${item2._path}.webp`"
+								alt=""
+								placeholder
+								loading="lazy"
+								preload
+							/>
+						</NuxtLink>
+					</template>
+				</div>
+				<Separator />
+			</template>
 		</template>
 	</div>
 </template>
 
 <script setup lang="ts">
-const route = useRoute();
-const { data: overvue } = useLazyAsyncData('overvue', () =>
-	fetchContentNavigation(queryContent(route.path)),
-);
+const currentCategory = useState<string>('currentCategory', () => 'All');
+const currentTag = useState<string>('currentTag', () => 'All');
+const { data: overvue } = await useGetOverview();
+const { data: allTags } = await useGetAllTags();
+const { data: allCategories } = await useGetAllCategories();
 </script>
 
 <style>
@@ -46,6 +82,7 @@ const { data: overvue } = useLazyAsyncData('overvue', () =>
 article img.active {
 	view-transition-name: energy-pic;
 }
+
 article h3.active {
 	view-transition-name: energy-title;
 }
