@@ -24,7 +24,7 @@
   "dependencies": {
     "@biomejs/biome": "^1.9.4",
     "@iconify-json/logos": "^1.2.4",
-    "@nuxt/content": "^2.13.4",
+    "@nuxt/content": "^3.0.0",
     "@nuxt/image": "^1.8.1",
     "@nuxthub/core": "^0.8.10",
     "@nuxtjs/tailwindcss": "^6.12.2",
