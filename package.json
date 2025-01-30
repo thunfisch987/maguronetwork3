@@ -41,7 +41,7 @@
     "radix-vue": "^1.9.11",
     "shadcn-nuxt": "^0.11.3",
     "sharp": "^0.33.5",
-    "tailwind-merge": "^2.5.5",
+    "tailwind-merge": "^3.0.0",
     "tailwindcss-animate": "^1.0.7",
     "unplugin-icons": "^0.22.0",
     "unplugin-vue-components": "^0.28.0",
