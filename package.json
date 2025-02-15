@@ -34,7 +34,7 @@
     "clsx": "^2.1.1",
     "is-buffer": "^2.0.5",
     "lucide-vue-next": "^0.469.0",
-    "pinia": "^2.3.0",
+    "pinia": "^3.0.0",
     "prettier": "^3.4.2",
     "prettier-plugin-organize-imports": "^4.1.0",
     "prettier-plugin-tailwindcss": "^0.6.9",
