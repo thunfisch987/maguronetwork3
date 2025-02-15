@@ -45,7 +45,7 @@
     "tailwindcss-animate": "^1.0.7",
     "unplugin-icons": "^0.22.0",
     "unplugin-vue-components": "^0.28.0",
-    "vercel": "^39.2.2",
+    "vercel": "^41.0.2",
     "vue-tsc": "^2.1.10",
     "wrangler": "^3.99.0"
   },
