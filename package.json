@@ -47,7 +47,7 @@
     "unplugin-vue-components": "^28.1.0",
     "vercel": "^41.1.4",
     "vue-tsc": "^2.2.0",
-    "wrangler": "^3.109.1"
+    "wrangler": "^4.7.1"
   },
   "trustedDependencies": ["@biomejs/biome", "@parcel/watcher", "better-sqlite3", "esbuild", "sharp", "vue-demi", "workerd"],
   "overrides": {
