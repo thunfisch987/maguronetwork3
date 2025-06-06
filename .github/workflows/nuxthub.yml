@@ -36,7 +36,7 @@ jobs:
                   key: ${{ runner.os }}-${{ hashFiles('node_modules/.cache') }}
 
             - name: Deploy to NuxtHub
-              uses: nuxt-hub/action@v1
+              uses: nuxt-hub/action@v2
               id: deploy
               with:
                   project-key: otaku-dashboard-53kh
