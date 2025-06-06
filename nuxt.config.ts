@@ -2,7 +2,7 @@
 import IconsResolver from 'unplugin-icons/resolver';
 import Icons from 'unplugin-icons/vite';
 import Components from 'unplugin-vue-components/vite';
-
+import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
 	devtools: {
 		enabled: true,
@@ -11,7 +11,6 @@ export default defineNuxtConfig({
 		'@pinia/nuxt',
 		'@nuxt/content',
 		'@nuxt/image',
-		'@nuxtjs/tailwindcss',
 		'shadcn-nuxt',
 		'@nuxtjs/color-mode',
 		'unplugin-icons/nuxt',
@@ -35,13 +34,6 @@ export default defineNuxtConfig({
 		strict: true,
 	},
 
-	tailwindcss: {
-		configPath: '~/tailwind.config.ts',
-		editorSupport: {
-			autocompleteUtil: true,
-		},
-	},
-
 	app: {
 		head: {
 			charset: 'utf-8',
@@ -63,7 +55,7 @@ export default defineNuxtConfig({
 		classSuffix: '',
 	},
 
-	css: ['@/assets/tw.css'],
+	css: ['~/assets/css/tailwind.css'],
 
 	shadcn: {
 		prefix: '',
@@ -82,6 +74,7 @@ export default defineNuxtConfig({
 				resolvers: [IconsResolver()],
 			}),
 			Icons({}),
+			tailwindcss(),
 		],
 	},
 
