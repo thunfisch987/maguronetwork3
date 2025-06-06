@@ -39,4 +39,4 @@ jobs:
               uses: nuxt-hub/action@v1
               id: deploy
               with:
-                  project-key: otaku-dashboard-53kh
+                  project-key: maguronetwork3-krlr
