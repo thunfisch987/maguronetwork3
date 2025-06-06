@@ -52,6 +52,9 @@
   "trustedDependencies": ["@biomejs/biome", "@parcel/watcher", "@tailwindcss/oxide", "better-sqlite3", "esbuild", "sharp", "unrs-resolver", "vue-demi", "workerd"],
   "overrides": {
     "@polka/url": "next",
-    "undici": "five"
+    "undici": "^5.29.0"
+  },
+  "resolutions": {
+    "undici": "^5.29.0"
   }
 }
