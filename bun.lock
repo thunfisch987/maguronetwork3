@@ -17,7 +17,7 @@
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
         "is-buffer": "^2.0.5",
-        "lucide-vue-next": "^0.513.0",
+        "lucide-vue-next": "^0.515.0",
         "pinia": "^3.0.3",
         "prettier": "^3.5.3",
         "prettier-plugin-organize-imports": "^4.1.0",
@@ -1689,7 +1689,7 @@
 
     "lru-cache": ["lru-cache@10.4.3", "", {}, "sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ=="],
 
-    "lucide-vue-next": ["lucide-vue-next@0.513.0", "", { "peerDependencies": { "vue": ">=3.0.1" } }, "sha512-/J7DB2WBC+UPcRswOfJFXSWt8r5HTMVu0PRkR6e0+Ozx6kLJZv4m71vbT1DS9RCjj0pfuLskWIslSBeeXmg7BA=="],
+    "lucide-vue-next": ["lucide-vue-next@0.515.0", "", { "peerDependencies": { "vue": ">=3.0.1" } }, "sha512-RqR6xrhay6xtnRPpfNQUYAO8yQjxWkoL7RWIa6im9IUmqGD2nsdUqDP8ZnpS5Ji4QhemSk6vgPJxAsYUbeLICw=="],
 
     "luxon": ["luxon@3.6.1", "", {}, "sha512-tJLxrKJhO2ukZ5z0gyjY1zPh3Rh88Ej9P7jNrZiHMUXHae1yvI2imgOZtL1TO8TW6biMMKfTtAOoEJANgtWBMQ=="],
 
