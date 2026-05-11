@@ -50,7 +50,7 @@
     "unplugin-icons": "^23.0.0",
     "unplugin-vue-components": "^32.0.0",
     "vercel": "^53.0.0",
-    "vue-tsc": "^2.2.10",
+    "vue-tsc": "^3.0.0",
     "wrangler": "^4.19.1"
   },
   "trustedDependencies": ["@biomejs/biome", "@parcel/watcher", "@tailwindcss/oxide", "better-sqlite3", "esbuild", "sharp", "unrs-resolver", "vue-demi", "workerd"],
