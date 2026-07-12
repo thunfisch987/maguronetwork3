@@ -19,7 +19,7 @@
     "eslint": "10.6.0",
     "eslint-config-prettier": "10.1.8",
     "nuxt": "4.4.8",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   },
   "dependencies": {
     "@biomejs/biome": "^2.0.0",
