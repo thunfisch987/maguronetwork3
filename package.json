@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/devtools": "3.4.1",
+    "@nuxt/devtools": "3.4.2",
     "@nuxt/eslint": "1.17.0",
     "@nuxt/icon": "2.5.0",
     "@nuxtjs/color-mode": "4.0.1",
